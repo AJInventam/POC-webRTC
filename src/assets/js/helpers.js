@@ -111,14 +111,16 @@ export default {
   getIceServer() {
     return {
       iceServers: [
-        {
-          urls: [
-            "stun:stun1.l.google.com:19302?transport=udp",
-            "stun:stun2.l.google.com:19302?transport=udp",
-            "stun:stun1.l.google.com:19302?transport=tcp",
-            "stun:stun2.l.google.com:19302?transport=tcp",
-          ],
-        },
+        { url: "stun:stun.l.google.com:19302" },
+        { url: "turn:homeo@turn.bistri.com:80", credential: "homeo" },
+        // {
+        //   urls: [
+        //     "stun:stun1.l.google.com:19302?transport=udp",
+        //     "stun:stun2.l.google.com:19302?transport=udp",
+        //     "stun:stun1.l.google.com:19302?transport=tcp",
+        //     "stun:stun2.l.google.com:19302?transport=tcp",
+        //   ],
+        // },
         // {
         //   urls: ["stun:eu-turn4.xirsys.com"],
         // },
