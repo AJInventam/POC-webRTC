@@ -111,9 +111,9 @@ export default {
   getIceServer() {
     return {
       iceServers: [
-        {
-          urls: ["stun:eu-turn4.xirsys.com"],
-        },
+        // {
+        //   urls: ["stun:eu-turn4.xirsys.com"],
+        // },
         {
           username:
             "ml0jh0qMKZKd9P_9C0UIBY2G0nSQMCFBUXGlk6IXDJf8G2uiCymg9WwbEJTMwVeiAAAAAF2__hNSaW5vbGVl",
