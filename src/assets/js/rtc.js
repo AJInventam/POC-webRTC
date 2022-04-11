@@ -34,7 +34,9 @@ window.addEventListener("load", () => {
 
     function test() {
       setTimeout(() => {
-        console.log(pc);
+        pc.forEach((ele) => {
+          console.log("connectionState", ele.connectionState);
+        });
         test();
       }, 2000);
     }
@@ -103,7 +105,8 @@ window.addEventListener("load", () => {
               let answer = await pc[data.sender].createAnswer();
 
               await pc[data.sender].setLocalDescription(answer);
-
+              alert(pc[data.sender].localDescription.sdp);
+              console.log("localDescription", pc[data.sender].localDescription);
               socket.emit("sdp", {
                 description: pc[data.sender].localDescription,
                 to: data.sender,
@@ -282,7 +285,7 @@ window.addEventListener("load", () => {
           //It will be enabled was user stopped sharing screen
           h.toggleVideoBtnDisabled(true);
 
-          //save my screen stream
+          //save my screen streamweb
           screen = stream;
 
           //share the new stream with all partners
