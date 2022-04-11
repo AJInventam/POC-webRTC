@@ -15,4 +15,4 @@ app.get("/", (req, res) => {
 
 io.of("/stream").on("connection", stream);
 
-server.listen(8000);
+server.listen(process.env.PORT || 8000);
