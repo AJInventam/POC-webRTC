@@ -113,8 +113,10 @@ export default {
       iceServers: [
         {
           urls: [
-            "stun:stun1.l.google.com:19302",
-            "stun:stun2.l.google.com:19302",
+            "stun:stun1.l.google.com:19302?transport=udp",
+            "stun:stun2.l.google.com:19302?transport=udp",
+            "stun:stun1.l.google.com:19302?transport=tcp",
+            "stun:stun2.l.google.com:19302?transport=tcp",
           ],
         },
         // {
