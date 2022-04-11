@@ -111,9 +111,16 @@ export default {
   getIceServer() {
     return {
       iceServers: [
-        // {
-        //   urls: ["stun:eu-turn4.xirsys.com"],
-        // },
+        {
+          urls: [
+            "stun:eu-turn4.xirsys.com",
+            "stun.l.google.com:19302",
+            "stun1.l.google.com:19302",
+            "stun2.l.google.com:19302",
+            "stun3.l.google.com:19302",
+            "stun4.l.google.com:19302",
+          ],
+        },
         {
           username:
             "ml0jh0qMKZKd9P_9C0UIBY2G0nSQMCFBUXGlk6IXDJf8G2uiCymg9WwbEJTMwVeiAAAAAF2__hNSaW5vbGVl",
