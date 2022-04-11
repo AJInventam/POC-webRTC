@@ -113,8 +113,6 @@ export default {
       iceServers: [
         {
           urls: [
-            "iphone-stun.strato-iphone.de:3478",
-            "numb.viagenie.ca:3478",
             "stun.12connect.com:3478",
             "stun.12voip.com:3478",
             "stun.1und1.de:3478",
@@ -249,7 +247,6 @@ export default {
             "stun3.l.google.com:19302",
             "stun4.l.google.com:19302",
             "stun.nextcloud.com:443",
-            "relay.webwormhole.io:3478",
           ],
         },
         {
