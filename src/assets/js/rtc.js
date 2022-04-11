@@ -34,9 +34,7 @@ window.addEventListener("load", () => {
 
     function test() {
       setTimeout(() => {
-        pc.forEach((ele) => {
-          console.log("pc element", ele);
-        });
+        console.log(pc);
         test();
       }, 2000);
     }
