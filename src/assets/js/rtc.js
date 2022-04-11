@@ -35,7 +35,7 @@ window.addEventListener("load", () => {
     function test() {
       setTimeout(() => {
         pc.forEach((ele) => {
-          console.log("connectionState", ele.connectionState);
+          console.log("pc element", ele);
         });
         test();
       }, 2000);
