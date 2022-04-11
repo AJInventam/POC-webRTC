@@ -208,6 +208,7 @@ window.addEventListener("load", () => {
 
       //send ice candidate to partnerNames
       pc[partnerName].onicecandidate = ({ candidate }) => {
+        console.log("onicecandidate",candidate);
         socket.emit("ice candidates", {
           candidate: candidate,
           to: partnerName,
