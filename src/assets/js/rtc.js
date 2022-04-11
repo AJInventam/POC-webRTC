@@ -252,6 +252,7 @@ window.addEventListener("load", () => {
       };
 
       pc[partnerName].onconnectionstatechange = (d) => {
+        console.log("onconnectionstatechange", d);
         switch (pc[partnerName].iceConnectionState) {
           case "disconnected":
           case "failed":
@@ -265,6 +266,7 @@ window.addEventListener("load", () => {
       };
 
       pc[partnerName].onsignalingstatechange = (d) => {
+        console.log("onsignalingstatechange", d);
         switch (pc[partnerName].signalingState) {
           case "closed":
             console.log("Signalling state is 'closed'");
