@@ -112,7 +112,7 @@ export default {
     return {
       iceServers: [
         {
-          urls: ["stun:stun1.l.google.com:19302"],
+          urls: ["stun:13.126.3.170"],
         },
         {
           urls: "turn:13.126.3.170?transport=tcp",
