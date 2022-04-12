@@ -115,7 +115,7 @@ export default {
           urls: ["stun:stun1.l.google.com:19302"],
         },
         {
-          urls: "turn:13.126.3.170:3478?transport=tcp",
+          urls: "turn:13.126.3.170?transport=tcp",
           credential: "InventamPOC",
           username: "Roger@123",
         },
