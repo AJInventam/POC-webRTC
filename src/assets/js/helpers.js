@@ -112,12 +112,12 @@ export default {
     return {
       iceServers: [
         {
-          urls: [
-            "stun:stun1.l.google.com:19302",
-            "stun:stun2.l.google.com:19302",
-            "stun:stun3.l.google.com:19302",
-            "stun:stun4.l.google.com:19302",
-          ],
+          // urls: [
+          //   //"stun:stun1.l.google.com:19302",
+          //   // "stun:stun2.l.google.com:19302",
+          //   // "stun:stun3.l.google.com:19302",
+          //   // "stun:stun4.l.google.com:19302",
+          // ],
         },
         {
           urls: "turn:13.126.3.170:3478?transport=tcp",
@@ -130,24 +130,24 @@ export default {
         // { url: "stun:stun3.l.google.com:19302" },
         // { url: "stun:stun4.l.google.com:19302" },
 
-        {
-          urls: "stun:openrelay.metered.ca:80",
-        },
-        {
-          urls: "turn:openrelay.metered.ca:80",
-          username: "openrelayproject",
-          credential: "openrelayproject",
-        },
-        {
-          urls: "turn:openrelay.metered.ca:443",
-          username: "openrelayproject",
-          credential: "openrelayproject",
-        },
-        {
-          urls: "turn:openrelay.metered.ca:443?transport=tcp",
-          username: "openrelayproject",
-          credential: "openrelayproject",
-        },
+        // {
+        //   urls: "stun:openrelay.metered.ca:80",
+        // },
+        // {
+        //   urls: "turn:openrelay.metered.ca:80",
+        //   username: "openrelayproject",
+        //   credential: "openrelayproject",
+        // },
+        // {
+        //   urls: "turn:openrelay.metered.ca:443",
+        //   username: "openrelayproject",
+        //   credential: "openrelayproject",
+        // },
+        // {
+        //   urls: "turn:openrelay.metered.ca:443?transport=tcp",
+        //   username: "openrelayproject",
+        //   credential: "openrelayproject",
+        // },
 
         // { url: "stun:stun.l.google.com:19302" },
         // { url: "turn:homeo@turn.bistri.com:80", credential: "homeo" },
@@ -162,15 +162,6 @@ export default {
         // {
         //   urls: ["stun:eu-turn4.xirsys.com"],
         // },
-        {
-          username:
-            "ml0jh0qMKZKd9P_9C0UIBY2G0nSQMCFBUXGlk6IXDJf8G2uiCymg9WwbEJTMwVeiAAAAAF2__hNSaW5vbGVl",
-          credential: "4dd454a6-feee-11e9-b185-6adcafebbb45",
-          urls: [
-            "turn:eu-turn4.xirsys.com:80?transport=udp",
-            "turn:eu-turn4.xirsys.com:3478?transport=tcp",
-          ],
-        },
       ],
     };
   },
