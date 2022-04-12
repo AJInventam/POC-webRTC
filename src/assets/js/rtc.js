@@ -258,10 +258,14 @@ window.addEventListener("load", () => {
           case "disconnected":
           case "failed":
             h.closeVideo(partnerName);
+            pc[partnerName].close();
+            delete pc[partnerName];
             break;
 
           case "closed":
             h.closeVideo(partnerName);
+            pc[partnerName].close();
+            delete pc[partnerName];
             break;
         }
       };
@@ -272,6 +276,8 @@ window.addEventListener("load", () => {
           case "closed":
             console.log("Signalling state is 'closed'");
             h.closeVideo(partnerName);
+            pc[partnerName].close();
+            delete pc[partnerName];
             break;
         }
       };
