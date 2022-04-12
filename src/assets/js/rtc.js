@@ -162,7 +162,7 @@ window.addEventListener("load", () => {
       if (screen && screen.getTracks().length) {
         screen.getTracks().forEach((track) => {
           pc[partnerName].addTrack(track, screen);
-          console.log(track); //should trigger negotiationneeded event
+          // console.log(track); //should trigger negotiationneeded event
         });
       } else if (myStream) {
         // when only camera is on
@@ -208,7 +208,7 @@ window.addEventListener("load", () => {
 
       //send ice candidate to partnerNames
       pc[partnerName].onicecandidate = ({ candidate }) => {
-        console.log("onicecandidate",candidate);
+        console.log("onicecandidate", candidate);
         socket.emit("ice candidates", {
           candidate: candidate,
           to: partnerName,
