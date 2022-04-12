@@ -103,7 +103,7 @@ window.addEventListener("load", () => {
               let answer = await pc[data.sender].createAnswer();
 
               await pc[data.sender].setLocalDescription(answer);
-              alert(pc[data.sender].localDescription.sdp);
+              // alert(pc[data.sender].localDescription.sdp);
               console.log("localDescription", pc[data.sender].localDescription);
               socket.emit("sdp", {
                 description: pc[data.sender].localDescription,
