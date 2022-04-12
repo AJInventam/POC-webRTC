@@ -114,11 +114,11 @@ export default {
         {
           urls: ["stun:stun1.l.google.com:19302"],
         },
-        // {
-        //   urls: "turn:13.126.3.170:3478?transport=tcp",
-        //   credential: "InventamPOC",
-        //   username: "Roger@123",
-        // },
+        {
+          urls: "turn:13.126.3.170:3478",
+          credential: "InventamPOC",
+          username: "Roger@123",
+        },
         // { url: "stun:stun.l.google.com:19302" },
         // { url: "stun:stun1.l.google.com:19302" },
         // { url: "stun:stun2.l.google.com:19302" },
@@ -128,11 +128,11 @@ export default {
         // {
         //   urls: "stun:openrelay.metered.ca:80",
         // },
-        {
-          urls: "turn:openrelay.metered.ca:80",
-          username: "openrelayproject",
-          credential: "openrelayproject",
-        },
+        // {
+        //   urls: "turn:openrelay.metered.ca:80",
+        //   username: "openrelayproject",
+        //   credential: "openrelayproject",
+        // },
         // {
         //   urls: "turn:openrelay.metered.ca:443",
         //   username: "openrelayproject",
